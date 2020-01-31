@@ -17,11 +17,11 @@ document.addEventListener("keydown", function(e) {
 });
 
 function moveDodgerRight(){
-  let RightNumbers = dodger.style.right.replace("px","");
-  let right = parseInt(RightNumbers, 10);
+  let RightNumbers = dodger.style.left.replace("px","");
+  let left = parseInt(RightNumbers, 10);
   
-  if (right > 0){
-    dodger.style.right = `${right+1}px`;
+  if(left > 0){
+    dodger.style.left = `${left+1}px`;
   }
 }
 
